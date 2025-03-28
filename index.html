@@ -1,104 +1,101 @@
-<!DOCTYPE html>
-<html>
+!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Prakash Sankar</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #84a6e9;
+            background-color: #1E1E2E;
+            color: #F8F8F2;
         }
-
         header {
-            background-color: #6543;
-            color: #fff;
+            background-color: #2A2A40;
             text-align: center;
-            padding: 2rem 0;
-            position: relative; /* Add this */
+            padding: 3rem 0;
         }
-
-        .header-content h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Add styles for the round profile picture */
         .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 10px;
+            border: 3px solid #FF9F1C;
         }
-
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
         nav {
-            background-color: #999;
-            color: #fff;
+            background-color: #333652;
             text-align: center;
+            padding: 0.8rem 0;
         }
-
         nav ul {
             list-style-type: none;
             padding: 0;
         }
-
         nav ul li {
             display: inline;
             margin: 0 20px;
         }
-
         nav ul li a {
             text-decoration: none;
-            color: #fff;
+            color: #FF9F1C;
+            font-weight: bold;
+            transition: 0.3s;
         }
-
+        nav ul li a:hover {
+            color: #F77F00;
+        }
         .section-content {
-            background-color: #555;
+            background-color: #44476A;
             padding: 2rem;
-            margin: 1rem;
+            margin: 1rem auto;
             border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
             text-align: justify;
         }
-
         .download-button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
+            background-color: #FF9F1C;
+            color: #1E1E2E;
+            font-weight: bold;
+            padding: 0.7rem 1.5rem;
             text-decoration: none;
-            border-radius: 20px;
+            border-radius: 25px;
             display: inline-block;
-            margin-top: 10px;
-            align-self: center;
+            transition: 0.3s;
         }
-
         .download-button:hover {
-            background-color: #555;
+            background-color: #F77F00;
         }
-
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
+            background-color: #2A2A40;
+            color: #F8F8F2;
         }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+        @media (max-width: 600px) {
+            .profile-picture {
+                width: 90px;
+                height: 90px;
+            }
+            .section-content {
+                width: 90%;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="./photo.jpg" alt="Your Profile Picture" class="profile-picture">
-            <h1>KANIMOZHI E</h1>
-            <p>ASSISTANT PROFESSOR </p>
-        </div>
+        <img src="assets/photo.jpg" alt="Your Profile Picture" class="profile-picture">
+        <h1>PRAKASH SANKAR</h1>
+        <p>B.Sc. CS Student | Cine Artist | Content Creator</p>
     </header>
 
     <nav>
@@ -108,23 +105,26 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
-           
         </ul>
     </nav>
 
     <section id="about">
         <div class="section-content">
             <h2>About Me</h2>
-            <p>I'm a <b>cyber security </b>expert and technology enthusiast who is passionate about helping organizations protect their data and create secure online environments. I'm driven by the desire to put technology to work for the greater good and empower individuals and businesses to benefit from the digital revolution. With over 7 years of experience in the field, I'm dedicated to staying up to date with the latest trends and innovations in the <a href="https://techtrainer20.github.io/git_con2/" traget="_target">cyber security </a> landscape. I'm also committed to helping others learn more about the importance of online security and how to stay safe online..</p>
+            <p>
+                I'm a <b>cine artist</b> and a creative professional passionate about storytelling and digital content creation. 
+                My work involves engaging audiences through innovative projects, film production, and social media experiences.
+            </p>
+            <p>
+                <a href="https://techtrainer20.github.io/git_con2/" target="_blank">View My Work</a>
+            </p>
         </div>
     </section>
 
     <section id="education">
         <div class="section-content">
             <h2>Education</h2>
-            <p>M.Sc.,M.Phil</p>
-            
-            
+            <p>M.Sc., M.Phil in Computer Science</p>
         </div>
     </section>
 
@@ -132,15 +132,10 @@
         <div class="section-content">
             <h2>Skills</h2>
             <ul>
-                <li>CyberSecurity</li>
-                <li>Internet of Things</li>
-                <li>Cloud Computing</li>
-                <li>Python</li>
-                <li>IBM cloud</li>
-                <li>ML & AI</li>
-                <li>java</li>
-                <li>c++</li>
-                <li>Java script</li>
+                <li>Video Production & Editing</li>
+                <li>Storytelling & Scriptwriting</li>
+                <li>Social Media Management</li>
+                <li>Python & Java Programming</li>
             </ul>
         </div>
     </section>
@@ -149,45 +144,39 @@
         <div class="section-content">
             <h2>Projects</h2>
             <ul>
-                <li><a href="#">AI Based alternator control system</a></li>
-                <li><a href="#">Cloud Security IBM</a></li>
-                <li><a href="#">IBM chetbot</a></li>
-                <li><a href="#">chetbot</a></li> 
-                <!-- Add more project links here -->
+                <li><a href="#">AI-Based Alternator Control System</a></li>
+                <li><a href="#">Cloud Security with IBM</a></li>
+                <li><a href="#">IBM Chatbot Development</a></li>
+                <li><a href="#">AI Chatbot Project</a></li>
             </ul>
         </div>
     </section>
 
     <section id="resume">
-    
-        <div class="section-content">
-            <center>
+        <div class="section-content" style="text-align: center;">
             <h2>Resume</h2>
-            <a href="./mycv.pdf" target="_blank" class="download-button">Download CV</a>
-        </center>
+            <a href="assets/mycv.pdf" target="_blank" class="download-button">Download CV</a>
         </div>
-        
     </section>
 
     <footer>
-        <p>&copy; 2025 KANIMOZHI E</p>
+        <p>&copy; 2025 Prakash Sankar</p>
     </footer>
 
     <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('nav ul li a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
             });
         });
     </script>
